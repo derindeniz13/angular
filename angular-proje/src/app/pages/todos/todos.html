@@ -1,0 +1,16 @@
+<div class="todos-container">
+  <h2>Görevleriniz</h2>
+
+  <div class="new-todo">
+    <input type="text" placeholder="Yeni görev ekle..." [(ngModel)]="newTodo" />
+    <button (click)="addTodo()">Ekle</button>
+  </div>
+
+  <ul>
+    <li *ngFor="let todo of todos; let i = index" [class.completed]="todo.completed">
+      <input type="checkbox" [(ngModel)]="todo.completed" (change)="toggleComplete(todo)" />
+      <span>{{ todo.text }}</span>
+      <button class="delete-btn" (click)="deleteTodo(i)">Sil</button>
+    </li>
+  </ul>
+</div>

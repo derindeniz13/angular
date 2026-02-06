@@ -1,0 +1,15 @@
+.register-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background:#f9f9f9;
+  border-radius:10px;
+  box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+h2 { text-align:center; margin-bottom:20px;}
+input { width:100%; padding:10px; margin-bottom:10px; border-radius:5px; border:1px solid #ccc;}
+button { width:100%; padding:10px; border:none; background:#28a745; color:white; border-radius:5px; cursor:pointer;}
+button:hover { background:#218838;}
+p { text-align:center; }
+.error { color:red; text-align:center; margin-bottom:10px;}
+a { text-decoration:underline; color:blue; cursor:pointer;}

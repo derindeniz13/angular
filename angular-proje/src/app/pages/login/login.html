@@ -1,0 +1,18 @@
+<div class="login-container">
+  <h2>Giriş Yap</h2>
+  <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+
+  <input type="text" placeholder="Kullanıcı Adı" [(ngModel)]="username" />
+  <input type="password" placeholder="Şifre" [(ngModel)]="password" />
+  <button (click)="login()">Giriş Yap</button>
+
+  <p>
+    Üye değil misiniz?
+    <span
+  (click)="goRegister()"
+  style="cursor:pointer; color:blue; text-decoration:underline;"
+>
+  Kayıt Ol
+</span>
+  </p>
+</div>

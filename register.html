@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kayıt Ol | Bugün Yapılacaklar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+        <main class="app-container">
+            <section class="screen active">
+                <h1>Yeni Hesap Oluşturun</h1>
+                <p> Bugünkü planlarınızı takip edebilmek için kayıt olun</p>
+                <form id="register-form">
+                        <div class="form-group">
+                    <label for="register-name">Adınız</label>
+                    <input type="text" id="register-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">E-posta</label>
+                        <input type="email" id="register-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Şifre</label>
+                        <input type="password" id="register-password" required>
+                    </div>
+                    <button type="submit" class="btn primary">Kayıt Olunuz</button>
+                </form>
+                <p class="small-text">
+                    Zaten Bir Hesabınız Var Mı?
+                    <a href="index.html" class="link-button">
+                        Giriş Yapınız
+                    </a>
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

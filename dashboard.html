@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bugün Yapılacaklar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="app-container">
+            <header class="dashboard-header">
+                <h1>Bugün Yapılacaklar</h1>
+                <p id="welcome-text">Hoş Geldiniz!</p>
+            </header>
+            <section class="todo-input-area">
+  <h2>Plan Ekle</h2>
+
+  <form id="todo-form">
+    <input
+      type="text"
+      id="todo-input"
+      placeholder="Bugün ne yapacaksın?"
+      required
+    />
+    <button type="submit" class="btn primary" id="todo-add-btn">Ekle</button>
+  </form>
+</section>
+
+<section class="todo-list-area">
+  <h2>Planların</h2>
+  <ul id="todo-list"></ul>
+</section>
+            <p class="small-text" style="margin-top:16px;">
+                <a href="index.html" class="link-button">Çıkış Yap</a>
+            </p>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>
